@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lochquarry Outdoor Centre</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/035bc74572.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/lochquarry_logo.png" alt="lochquarry outdoor centre logo">
+        </div>
+        <nav class="header-nav">
+            <ul class="header-ul">
+                <li><a href="meet_the_team.html">Meet the team</a></li>
+                <li><a href="land_based_activities.html">Land-based Activities</a></li>
+                <li><a href="water_based_activities.html">Water-based Activities</a></li>
+                <li><a href="rope_based_activities.html">Rope-based Activities</a></li>  
+                <li><div class="tooltip-container">
+                    <button class="tooltip-button">Contact Us</button>
+                    <div class="tooltip-text" id="tooltip"></div></div></li>                                                           
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section class="hero">
+        <img src="images/lake_min.jpg" alt="canoe on body of water with small island in background">
+        <h1>Lochquarry Outdoor Centre</h1>
+        
+    </section>
+    <section class="overview">
+        <div class="aerial_video">
+        <video id="video" width="600" muted>
+            <source src="images/aerial_view.mp4" type="video/mp4">
+            <p>You don't have an HTML5 enabled browser</p>
+        </video>
+        </div>
+        <h2>Based in the beautiful Argyll Hills and established in 1982 we offer a range of exciting outdoor activities for young people aged 6 - 18. 
+            You can select one of our popular packages or we can create a bespoke experience for your group. Click on the 'contact us' button and one of our friendly team will respond to your query.</h2>
+    </section>
+    <section class="quotes">
+        <h2>What our previous customers say:</h2>
+        <cite>"We had a great time and loved all the different activities that we did"</cite>
+        <p>- 8th Gourock Guides</p>
+    </section>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="address"><p>Lochquarry Outdoor Centre<br>Aviemore<br>PH22 1PZ<br>Tel: 01475 229 8311</p></div>
+        <div class="GENERAL ENQUIRIES"><p>GENERAL ENQUIRIES<br>info@lochquarryoutdoorcentre.com</p></div>
+        <div class="social_media">
+            <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/?lang=en-gb" target="blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+<script>
+    const video = document.getElementById("video");
+
+    video.addEventListener("mouseenter", () => {
+        video.loop = true; // Enable looping
+        video.play(); // Start playing
+    });
+
+    video.addEventListener("mouseleave", () => {
+        video.loop = false; // Disable looping
+        video.pause(); // Pause video when mouse leaves
+        video.currentTime = 0; // Reset to the beginning
+    });
+</script>
+
+<script src="script.js"></script>
+</body>
+
+</html>
